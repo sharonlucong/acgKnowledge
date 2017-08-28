@@ -13,6 +13,9 @@ body {
   width: 100%;
   margin: 0 auto 50px;
 }
+#uyan_frame {
+  margin: 20px;
+}
 .archive {
   margin: 1em auto;
   padding: 30px 50px;
