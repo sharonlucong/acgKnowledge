@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>网站的名字</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-08-28T04:03:24.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>飙速宅男</title>
+    <link href="http://yoursite.com/2017/08/27/Yowamushi-pedal/"/>
+    <id>http://yoursite.com/2017/08/27/Yowamushi-pedal/</id>
+    <published>2017-08-27T23:29:45.000Z</published>
+    <updated>2017-08-28T04:03:24.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>冰上的尤里</title>
+    <link href="http://yoursite.com/2017/08/27/yuri-on-ice/"/>
+    <id>http://yoursite.com/2017/08/27/yuri-on-ice/</id>
+    <published>2017-08-27T23:29:45.000Z</published>
+    <updated>2017-08-28T04:03:24.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>排球少年</title>
+    <link href="http://yoursite.com/2017/08/26/haikyuu/"/>
+    <id>http://yoursite.com/2017/08/26/haikyuu/</id>
+    <published>2017-08-27T03:34:46.000Z</published>
+    <updated>2017-08-28T04:03:24.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="校园" scheme="http://yoursite.com/tags/%E6%A0%A1%E5%9B%AD/"/>
+    
+      <category term="运动" scheme="http://yoursite.com/tags/%E8%BF%90%E5%8A%A8/"/>
+    
+      <category term="排球" scheme="http://yoursite.com/tags/%E6%8E%92%E7%90%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>月色真美</title>
+    <link href="http://yoursite.com/2017/08/26/Tsuki-ga-Kirei/"/>
+    <id>http://yoursite.com/2017/08/26/Tsuki-ga-Kirei/</id>
+    <published>2017-08-27T03:34:46.000Z</published>
+    <updated>2017-08-28T04:03:24.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="校园" scheme="http://yoursite.com/tags/%E6%A0%A1%E5%9B%AD/"/>
+    
+      <category term="纯爱" scheme="http://yoursite.com/tags/%E7%BA%AF%E7%88%B1/"/>
+    
+      <category term="文学" scheme="http://yoursite.com/tags/%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
+  
+</feed>

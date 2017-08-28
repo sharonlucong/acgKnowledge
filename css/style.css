@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  margin: 0 auto 50px;
+}
+.archive {
+  margin: 1em auto;
+  padding: 30px 50px;
+  background-color: #fff;
+}
+.archive .post-archive {
+  list-style: none;
+  padding: 0;
+}
+.archive .post-archive .post-item {
+  margin: 5px 0;
+}
+.archive .post-archive .post-item .post-date {
+  display: inline-block;
+  margin-right: 10px;
+  color: #bababa;
+}
+.archive .post-archive .post-item .post-title {
+  color: #368ccb;
+  text-decoration: none;
+}
+.header {
+  margin: 1em 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.header .blog-title .logo {
+  color: #aaa;
+  font-size: 1em;
+  font-family: "Comic Sans MS", cursive, LiSu, sans-serif;
+  text-decoration: none;
+}
+.header .menu {
+  margin: 0;
+  padding: 0;
+}
+.header .menu .menu-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.header .menu .menu-item-link {
+  color: #aaa;
+  text-decoration: none;
+}
+.header .menu .menu-item-link:hover {
+  color: #368ccb;
+}
+.footer {
+  height: 50px;
+  background: #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+.post {
+  margin: 0em auto 1em;
+  padding: 30px 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2px #ddd;
+}
+.posts .post-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.posts .post-image {
+  background: #ccc;
+  margin: 0;
+  padding: 0;
+  min-height: 100px;
+  width: 100%;
+}
+.posts .post-image img {
+  height: 100%;
+}
+.posts .post:first-child {
+  margin-top: 0;
+}
+.posts .post-title {
+  font-size: 1em;
+}
+.posts .post-title .post-title-link {
+  color: #368ccb;
+  text-decoration: none;
+}
+.posts .post-content a {
+  color: #368ccb;
+  text-decoration: none;
+}
+.posts .post-meta {
+  color: #bababa;
+}
+.slogan-container {
+  background: #ccc;
+  min-height: 300px;
+  padding: 30px;
+  margin-bottom: 100px;
+  color: #505050;
+  width: 100%;
+}
