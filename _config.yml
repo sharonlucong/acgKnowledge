@@ -79,4 +79,4 @@ theme: acgKnowledge
 deploy:
   type: git
   repo: https://github.com/sharonlucong/acgKnowledge.git
-  branch: deploy
+  branch: master
