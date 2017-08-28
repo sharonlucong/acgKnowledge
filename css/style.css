@@ -10,6 +10,7 @@ body {
   padding: 0;
 }
 .main {
+  width: 100%;
   margin: 0 auto 50px;
 }
 .archive {
@@ -112,5 +113,4 @@ body {
   padding: 30px;
   margin-bottom: 100px;
   color: #505050;
-  width: 100%;
 }
