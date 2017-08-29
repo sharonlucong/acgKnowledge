@@ -8,6 +8,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  font-family: arial, sans-serif;
 }
 .main {
   width: 100%;
@@ -45,9 +46,10 @@ body {
 }
 .header .blog-title .logo {
   color: #aaa;
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: "Comic Sans MS", cursive, LiSu, sans-serif;
   text-decoration: none;
+  margin-left: 10px;
 }
 .header .menu {
   margin: 0;
@@ -102,6 +104,9 @@ body {
 .posts .post-title .post-title-link {
   color: #368ccb;
   text-decoration: none;
+}
+.posts .post-content {
+  font-size: 12px;
 }
 .posts .post-content a {
   color: #368ccb;
