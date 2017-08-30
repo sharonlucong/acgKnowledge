@@ -1,26 +1,29 @@
 <%- partial('_partial/slogan') %>
-<section class="posts">
-    <% page.posts.each(function (post) { %>
-        <div class="post-container">
-            <div class="post-image">
+    <section class="posts">
+        <% page.posts.each(function (post) { %>
+            <div class="post-container">
+                <div class="post-image">
                     <a class="post-title-link" href="<%- url_for(post.path) %>">
                 <img src="<%- post.cover_image %>" width="100%" height="100%"></img>
                     </a>
+                </div>
+                <article class="post">
+                    <div class="post-title">
+                        <a class="post-title-link" href="<%- url_for(post.path) %>">
+                            <%= post.title %>
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <a href="<%- url_for(post.path) %>">
+                            <%- post.excerpt %>
+                        </a>
+                    </div>
+
+                    <div class="post-meta">
+                        <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+                    </div>
+                </article>
             </div>
-            <article class="post">
-                <div class="post-title">
-                    <a class="post-title-link" href="<%- url_for(post.path) %>">
-                        <%= post.title %>
-                    </a>
-                </div>
-                <div class="post-content">
-                    <%- post.excerpt %>
-                </div>
-                <div class="post-meta">
-                    <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
-                </div>
-            </article>
-        </div>
-        <% }) %>
-</section>
-<%- partial('_partial/paginator') %>
+            <% }) %>
+    </section>
+    <%- partial('_partial/paginator') %>
