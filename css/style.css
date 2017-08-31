@@ -87,7 +87,7 @@ body {
   font-size: 12px;
 }
 .post .post-meta {
-  font-size: 10px;
+  font-size: 12px;
 }
 img {
   display: block;
@@ -120,6 +120,9 @@ img {
 .posts .post-content a {
   color: inherit;
   text-decoration: none;
+}
+.posts .post-content a p:first-child {
+  font-size: 14px;
 }
 .posts .post-content a:hover {
   text-decoration: underline;
