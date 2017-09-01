@@ -17,8 +17,9 @@ body p {
   width: 100%;
   margin: 0 auto 50px;
 }
-#uyan_frame {
-  margin: 20px;
+#lv-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 .archive {
   margin: 1em auto;
@@ -42,7 +43,9 @@ body p {
   text-decoration: none;
 }
 .header {
-  margin: 1em 0;
+  padding: 1em 0;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2px #ddd;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -69,6 +72,173 @@ body p {
 .header .menu .menu-item-link:hover {
   color: #368ccb;
 }
+blockquote,
+article pre,
+article .highlight {
+  background-color: #f7f7f7;
+  border-left: 6px solid #b4b4b4;
+  margin: 10px 0;
+  padding: 15px 20px;
+  overflow: auto;
+  color: #555;
+  line-height: 22.400000000000002px;
+}
+article .highlight .gutter pre,
+article .gist .gist-file .gist-data .line-numbers {
+  color: #666;
+  font-size: 0.85em;
+}
+article pre,
+article code {
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
+article code {
+  background: #eee;
+  text-shadow: 0 1px #fff;
+  padding: 0 0.3em;
+}
+article pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+}
+article .highlight {
+  border: none;
+}
+article .highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+article .highlight table {
+  margin: 0;
+  width: auto;
+}
+article .highlight td {
+  border: none;
+  padding: 0;
+}
+article .highlight figcaption {
+  font-size: 0.85em;
+  color: #999;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+article .highlight figcaption a {
+  float: right;
+}
+article .highlight .gutter pre {
+  text-align: right;
+  padding-right: 20px;
+}
+article .highlight .line {
+  height: 22.400000000000002px;
+}
+article .highlight .line.marked {
+  background: #515151;
+}
+article .gist {
+  margin: 0 -20px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px 0;
+  background: #f7f7f7;
+  padding: 15px 20px 15px 0;
+}
+article .gist .gist-file {
+  border: none;
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  margin: 0;
+}
+article .gist .gist-file .gist-data {
+  background: none;
+  border: none;
+}
+article .gist .gist-file .gist-data .line-numbers {
+  background: none;
+  border: none;
+  padding: 0 20px 0 0;
+}
+article .gist .gist-file .gist-data .line-data {
+  padding: 0 !important;
+}
+article .gist .gist-file .highlight {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+article .gist .gist-file .gist-meta {
+  background: #f7f7f7;
+  color: #999;
+  font: 0.85em -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  text-shadow: 0 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-left: 20px;
+}
+article .gist .gist-file .gist-meta a {
+  color: #258fb8;
+  font-weight: normal;
+}
+article .gist .gist-file .gist-meta a:hover {
+  text-decoration: underline;
+}
+pre .comment,
+pre .title {
+  color: #999;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f99157;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #9c9;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #9c9;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #c9c;
+}
 .footer {
   height: 50px;
   background: #ccc;
@@ -78,11 +248,11 @@ body p {
   overflow: hidden;
 }
 .post {
+  max-width: 800px;
   margin: 0em auto 1em;
   padding: 30px 30px;
   background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 2px #ddd;
+  border-bottom: 1px solid #ddd;
   font-size: 14px;
 }
 .post .post-content p:first-child {
@@ -96,9 +266,14 @@ img {
   display: block;
   margin: 0 auto;
 }
+.posts .post {
+  border: none;
+}
 .posts .post-container {
+  margin: 0em auto 1em;
   max-width: 800px;
-  margin: 0 auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2px #ddd;
 }
 .posts .post-image {
   background: #ccc;
