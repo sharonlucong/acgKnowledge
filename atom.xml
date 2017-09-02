@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>知十</title>
   
-  <link href="/acgKnowledge/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
   <link href="www.zhishi.world/"/>
   <updated>2017-08-30T20:01:13.000Z</updated>
