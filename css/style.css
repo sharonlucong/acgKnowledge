@@ -251,6 +251,16 @@ pre .javascript .function {
 .post .post-meta {
   font-size: 12px;
 }
+.post .share_style {
+  display: flex;
+}
+.post .share_style div {
+  padding-top: 5px;
+}
+.post .share_style img {
+  display: inline-block;
+  margin: 0 10px;
+}
 img {
   display: block;
   margin: 0 auto;
