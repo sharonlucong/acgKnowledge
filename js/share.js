@@ -1,5 +1,5 @@
 function sharePost(type) {
-  var link = window.location.href;
+  var link = encodeURI(window.location.href);
   var title = document.getElementsByClassName("title") && document.getElementsByClassName("title")[0].textContent.trim();
 
   if (type == "sina") {
