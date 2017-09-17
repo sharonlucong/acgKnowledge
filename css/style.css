@@ -19,6 +19,12 @@ body .main {
   max-width: 800px;
   margin: 0 auto;
 }
+.jiathis_style a:first-child span {
+  margin-left: 5px;
+}
+.jiathis_style a .jtico {
+  margin: 0 2px;
+}
 .archive {
   margin: 1em auto;
   padding: 30px 50px;
