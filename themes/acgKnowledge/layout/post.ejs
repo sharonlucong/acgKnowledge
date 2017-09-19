@@ -7,7 +7,7 @@
     <div class="post-meta">
         <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
     </div>
-    <div class="post-content">
+    <div id=<%= page.title %> class="post-content">
         <%- page.content %>
     </div>
 
@@ -19,21 +19,22 @@
             <a class="jiathis_button_weixin"></a>
             <a class="jiathis_button_douban"></a>
             <a class="jiathis_button_qzone"></a>
-       </div>
-      <script type="text/javascript" >
-        var title = document.getElementsByClassName("title") && document.getElementsByClassName("title")[0].textContent.trim();
+        </div>
+        <script type="text/javascript">
+            var title = document.getElementsByClassName("title") && document.getElementsByClassName("title")[0].textContent.trim();
 
-        var jiathis_config={
-          hideMore:false,
-          title: title
-        }
-      </script>
-      <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-      <!-- JiaThis Button END -->
+            var jiathis_config = {
+                hideMore: false,
+                title: title,
+                shortUrl: true
+            }
+        </script>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+        <!-- JiaThis Button END -->
         <!-- <a href="javascript:void()" class="" onClick="sharePost('sina')"><img src="http://ovhiwju0x.bkt.clouddn.com/weibo-icon.png-share.icon" alt="新浪微博"></a> -->
         <!-- <a href="javascript:void()" class="" onClick="sharePost('qzone')"><img src="http://ovhiwju0x.bkt.clouddn.com/qzone-icon.png-share.icon" alt="QQ空间"></a> -->
         <!-- <a href="javascript:void()" class="" onClick="sharePost('douban')"><img src="http://ovhiwju0x.bkt.clouddn.com/douban-icon.png-share.icon" alt="豆瓣"></a> -->
- </div>
+    </div>
 </article>
 <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDUyMi83MDc2">
@@ -54,5 +55,9 @@
     </script>
     <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
+<a href="#" + <%= page.title %> class="toTopAnchor">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</a>
+
 <!-- City版安装代码已完成 -->
 <%- js('js/share.js') %>
